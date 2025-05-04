@@ -1,13 +1,79 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="icon" type="image/svg+xml" href="./src/image/logo-transparent.png"/>
+    <title>My Blog</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <header class="header">
+      <div class="container header__content">
+        <div class="header__content-logo">
+          <p>logo</p>
+        </div>
+        <div class="header__content-nav">
+          <div class="header__content-nav-left">
+            <a class="header__content-nav-left-about" href="">About</a>
+            <a class="header__content-nav-left-projects" href="">Projects</a>
+            <a class="header__content-nav-left-newpost" href="">New posts</a>
+            <a class="header__content-nav-left-contacts" href="">Contacts ????</a> 
+          </div>
+          <!-- <div class="header__content-nav-right"></div> -->
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section>
+        <div class="container about__content">
+          <div class="about__content-left">
+            <div class="about__content-left-content">
+              <div class="about__content-left-content-photo">
+                <img src="" alt="my photo">
+              </div>
+              <div class="about__content-left-content-text">
+                <h1 class="about__content-left-content-text-title">About me</h1>
+                <p class="about__content-left-content-text-addtitle">Привіт! Я — фронтенд-розробниця. Люблю створювати інтуїтивні й естетичні інтерфейси, де дизайн зустрічається з кодом. Тут — мої проєкти, експерименти та трохи візуального натхнення.</p>
+              </div>
+            </div>
+          </div>
+          <div class="about__content-right">
+            <img src="" alt="me">
+            <img src="" alt="code">
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container project__content"></div>
+      </section>
+      <section>
+        <div class="container new-posts__content">
+          <form class="form"> 
+            <label for="title">Назва</label>
+            <input id="title" class="form_input" type="text">
+            <label for="author">Автор</label>
+            <input id="author" class="form_input" type="text">
+            <label for="mainText">Контент</label>
+            <input id="mainContent" class="form_input" type="text">
+            <button type="submit">send</button>
+          </form>
+        </div>
+      </section>
+      <section>
+        <div class="container contacts__content"></div>
+      </section>
+      
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__content"></div>
+    </footer>
+    <ul class="blog-list"></ul>
+
+    <!-- <script src="./src/js/index.js"></script>
+    <script type="module" src="./src/js/getBlock.js"></script>
+    <script type="module" src="./src/js/takeData.js"></script> -->
   </body>
 </html>
+
