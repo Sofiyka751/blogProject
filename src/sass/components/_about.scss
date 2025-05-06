@@ -1,0 +1,40 @@
+#about {
+  margin: 90px 0;
+}
+
+.about__content {
+  display: flex;
+  &-left {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    &-photo {
+      img {
+      }
+    }
+    &-text {
+      &-title {
+        font-size: 36px;
+        color: #6a0dad;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      &-subtitle {
+        font-size: 18px;
+        color: #5c4d7d;
+        max-width: 600px;
+        margin: 20px auto 0;
+        line-height: 1.6;
+      }
+    }
+  }
+  &-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    img {
+    }
+  }
+}

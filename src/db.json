@@ -1,22 +1,3 @@
 {
-  "blogs": [
-    {
-      "id": 1,
-      "title": "First blog",
-      "author": "Sofiya",
-      "data": "30/04/2025",
-      "article": {
-        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ullam asperiores laudantium? Porro voluptatibus, quis ipsam molestias eaque perspiciatis sit velit sunt sed culpa quo consequuntur, non dicta a facere. Voluptatibus optio omnis perspiciatis, ipsa quod distinctio illum itaque voluptas?",
-        "comments": [
-          {
-            "avatar": "https://placehold.co/400",
-            "uesrName": "Loren",
-            "data": "30/04/2025",
-            "country": "Spain",
-            "mainText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolorum reiciendis provident deleniti enim quo!"
-          }
-        ]
-      }
-    }
-  ]
+  "blogs": []
 }
