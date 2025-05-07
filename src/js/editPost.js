@@ -1,23 +1,22 @@
-import { getBlock } from './getBlock.js';
-
 export async function editPost(id) {
   try {
-    const res = await fetch(`http://localhost:3000/blogs/${id}`);
-    const post = await res.json();
+    const response = await fetch(`http://localhost:3000/blogs/${id}`);
+    if (!response.ok) throw new Error("Помилка завантаження поста для редагування");
 
-    // Заповнюємо форму поточними даними
-    document.querySelector('#title').value = post.title;
-    document.querySelector('#author').value = post.author;
-    document.querySelector('#mainContent').value = post.text;
+    const post = await response.json();
+    
+    const form = document.querySelector(".form");
+    const submitButton = form.querySelector("button");
 
-    // Замінюємо submit на оновлення
-    const form = document.querySelector('.form');
-    const submitButton = form.querySelector('button');
+    form.elements.title.value = post.title;
+    form.elements.author.value = post.author;
+    form.elements.mainContent.value = post.text;
 
     submitButton.textContent = "Оновити";
     submitButton.dataset.editing = id;
 
+    form.scrollIntoView({ behavior: "smooth", block: "start" });
   } catch (error) {
-    console.error("Помилка при редагуванні:", error);
+    console.error("Помилка при редагуванні поста:", error);
   }
 }
