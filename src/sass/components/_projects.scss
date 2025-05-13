@@ -1,3 +1,6 @@
+@import "./variable";
+@import "./mixins";
+
 .project__content {
   &-title {
     font-size: 36px;

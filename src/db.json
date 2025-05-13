@@ -1,22 +1,46 @@
 {
   "blogs": [
     {
-      "id": "1",
       "title": "First Blog",
       "author": "Sofiya",
-      "date": "30/04/2025",
       "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum explicabo modi nulla alias beatae. Omnis commodi vitae adipisci qui repellat sed, molestiae dolorum doloribus in? Praesentium, veniam qui, consequuntur aliquid eum minima, ipsum maiores natus debitis accusantium repellat numquam sequi.",
-      "article": {
-        "comments": [
-          {
-            "avatar": "https://placehold.co/400",
-            "userName": "Tom",
-            "date": "30/04/2025",
-            "country": "Poland",
-            "mainText": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium rem porro nam, nesciunt molestias vero."
-          }
-        ]
-      }
+      "id": "1"
+    },
+    {
+      "id": "7453",
+      "title": "Second blog",
+      "author": "sofiya",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum explicabo modi nulla alias beatae. Omnis commodi vitae adipisci qui repellat sed, molestiae dolorum doloribus in? Praesentium, veniam qui, consequuntur aliquid eum minima, ipsum maiores natus debitis accusantium repellat numquam sequi."
+    },
+    {
+      "id": "147a",
+      "title": "Світло ранкової кави",
+      "author": "Софія",
+      "text": "Тиша. Перше проміння сонця лягає на чашку. Запах кави обіймає кімнату. Ранок — це мить для себе."
+    },
+    {
+      "id": "3ac8",
+      "title": "A Walk Among the Pines",
+      "author": "Danylo",
+      "text": "Slow steps, rustling leaves, the scent of resin. The forest heals in silence, without questions."
+    },
+    {
+      "id": "01a1",
+      "title": "Thoughts by the Sea",
+      "author": "Alina",
+      "text": "The waves wash away the fatigue. The wind carries answers. Sometimes it's enough to just sit and listen."
+    },
+    {
+      "id": "5f74",
+      "title": "Pages in the Lamp Light",
+      "author": "Maksym",
+      "text": "An old notebook, an ink pen, and the night that urges you to write. In these words, a soul lives."
+    },
+    {
+      "id": "b8de",
+      "title": "Where the Sky Touches Dreams",
+      "author": "Kateryna",
+      "text": "Look up. The sky doesn’t ask if you can — it simply offers space to fly."
     }
   ]
 }

@@ -1,35 +1,40 @@
-import { deletePost } from "./deletePost.js";
 import { editPost } from "./editPost.js";
+import { deletePost } from "./deletePost.js";
 
-const blogList = document.querySelector(".blog-list");
+export function makeHtml(posts) {
+  const postContainer =
+    document.querySelector(".postsContainer") || createPostsContainer();
+  postContainer.innerHTML = "";
 
-export function makeHtml(data) {
-  const markup = data
-    .map((item) => {
-      return `
-        <li class="new-posts__content-item" data-id="${item.id}">
-          <h2 class="new-posts__content-item-title">${item.title}</h2>
-          <p class="new-posts__content-item-author"><strong>Автор:</strong> ${item.author}</p>
-          <p class="new-posts__content-item-text">${item.text}</p>
-          <button class="edit-btn">Редагувати</button>
-          <button class="delete-btn">Видалити</button>
-        </li>`;
-    })
-    .join("");
+  posts.forEach((post) => {
+    const postCard = document.createElement("div");
+    postCard.className = "postCard";
+    postCard.innerHTML = `
+      <h3 class="newPosts__content-item-title">${post.title}</h3>
+      <p class="newPosts__content-item-author"><strong>Автор:</strong> ${post.author}</p>
+      <p class="newPosts__content-item-text">${post.text}</p>
+      <div class="postActions">
+        <button class="edit-btn" data-id="${post.id}">Редагувати</button>
+        <button class="delete-btn" data-id="${post.id}">Видалити</button>
+      </div>`;
 
-  blogList.innerHTML = markup;
-
-  blogList.querySelectorAll(".delete-btn").forEach((btn) => {
-    btn.addEventListener("click", (e) => {
-      const id = e.target.closest("li").dataset.id;
-      deletePost(id);
+    postCard.querySelector(".edit-btn").addEventListener("click", () => {
+      editPost(post.id);
     });
-  });
 
-  blogList.querySelectorAll(".edit-btn").forEach((btn) => {
-    btn.addEventListener("click", (e) => {
-      const id = e.target.closest("li").dataset.id;
-      editPost(id);
+    postCard.querySelector(".delete-btn").addEventListener("click", () => {
+      if (confirm("Ви дійсно хочете видалити цей пост?")) {
+        deletePost(post.id);
+      }
     });
+
+    postContainer.appendChild(postCard);
   });
+}
+
+function createPostsContainer() {
+  const container = document.createElement("div");
+  container.className = "postsContainer";
+  document.body.appendChild(container);
+  return container;
 }

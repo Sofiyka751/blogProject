@@ -1,0 +1,18 @@
+@mixin input-style {
+  padding: 0.75rem;
+  border-radius: 10px;
+  border: 1px solid lighten($purple, 10%);
+  background: $white;
+  color: $text-main;
+
+  &::placeholder {
+    color: #999;
+  }
+}
+
+@mixin card-style {
+  background: $bg-card;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px $shadow-light;
+}

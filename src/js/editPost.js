@@ -6,7 +6,7 @@ export async function editPost(id) {
     const post = await response.json();
     
     const form = document.querySelector(".form");
-    const submitButton = form.querySelector("button");
+    const submitButton = form.querySelector(".newPost__content-form-btn");
 
     form.elements.title.value = post.title;
     form.elements.author.value = post.author;

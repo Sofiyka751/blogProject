@@ -1,0 +1,22 @@
+@import "./variable";
+@import "./mixins";
+
+.searchPost__content {
+    background: lighten($bg-card, 5%);
+    padding: 1.5rem !important;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 5px $shadow-light;
+  
+    &-title {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: $text-accent;
+      font-style: italic;
+    }
+  
+    &-title_input {
+      @include input-style;
+      width: 100%;
+    }
+  }
