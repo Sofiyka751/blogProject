@@ -66,10 +66,11 @@
   margin-bottom: 2rem;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  margin: 0 50px;
 
   .postCard {
     @include card-style;
-    width: 450px;
+    width: 300px;
     transition: transform 0.2s ease;
     display: flex;
     flex-direction: column;
