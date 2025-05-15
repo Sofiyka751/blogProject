@@ -67,7 +67,6 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 0 50px;
-
   .postCard {
     @include card-style;
     width: 300px;
@@ -75,7 +74,6 @@
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-
     &:hover {
       transform: translateY(-4px);
     }
