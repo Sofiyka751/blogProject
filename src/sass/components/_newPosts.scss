@@ -69,7 +69,7 @@
 
   .postCard {
     @include card-style;
-    width: 500px;
+    width: 450px;
     transition: transform 0.2s ease;
     display: flex;
     flex-direction: column;

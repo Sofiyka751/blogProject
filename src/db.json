@@ -1,46 +1,84 @@
 {
   "blogs": [
     {
-      "title": "First Blog",
+      "id": "1",
+      "title": "Whispering Shadows",
       "author": "Sofiya",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum explicabo modi nulla alias beatae. Omnis commodi vitae adipisci qui repellat sed, molestiae dolorum doloribus in? Praesentium, veniam qui, consequuntur aliquid eum minima, ipsum maiores natus debitis accusantium repellat numquam sequi.",
-      "id": "1"
+      "text": "Lost in thoughts that echo in the night.",
+      "category": "Midnight Confessions",
+      "photoUrl": ""
     },
     {
-      "id": "7453",
-      "title": "Second blog",
-      "author": "sofiya",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum explicabo modi nulla alias beatae. Omnis commodi vitae adipisci qui repellat sed, molestiae dolorum doloribus in? Praesentium, veniam qui, consequuntur aliquid eum minima, ipsum maiores natus debitis accusantium repellat numquam sequi."
-    },
-    {
-      "id": "147a",
-      "title": "Світло ранкової кави",
-      "author": "Софія",
-      "text": "Тиша. Перше проміння сонця лягає на чашку. Запах кави обіймає кімнату. Ранок — це мить для себе."
-    },
-    {
-      "id": "3ac8",
-      "title": "A Walk Among the Pines",
-      "author": "Danylo",
-      "text": "Slow steps, rustling leaves, the scent of resin. The forest heals in silence, without questions."
-    },
-    {
-      "id": "01a1",
-      "title": "Thoughts by the Sea",
+      "id": "2",
+      "title": "Strange Encounters",
       "author": "Alina",
-      "text": "The waves wash away the fatigue. The wind carries answers. Sometimes it's enough to just sit and listen."
+      "text": "People you meet once but never forget.",
+      "category": "Urban Echoes",
+      "photoUrl": ""
     },
     {
-      "id": "5f74",
-      "title": "Pages in the Lamp Light",
-      "author": "Maksym",
-      "text": "An old notebook, an ink pen, and the night that urges you to write. In these words, a soul lives."
+      "id": "3",
+      "title": "Quiet Corners",
+      "author": "Danylo",
+      "text": "The cafe on 5th Avenue — a perfect spot to watch the world pass by.",
+      "category": "Urban Echoes",
+      "photoUrl": ""
     },
     {
-      "id": "b8de",
-      "title": "Where the Sky Touches Dreams",
+      "id": "4",
+      "title": "Whisper of the Wind",
       "author": "Kateryna",
-      "text": "Look up. The sky doesn’t ask if you can — it simply offers space to fly."
+      "text": "What if the wind carries secrets no one dares to share?",
+      "category": "Midnight Confessions",
+      "photoUrl": ""
+    },
+    {
+      "id": "5",
+      "title": "Neon Nights",
+      "author": "Maksym",
+      "text": "Lights, music, and the feeling that something extraordinary is about to happen.",
+      "category": "City Life",
+      "photoUrl": ""
+    },
+    {
+      "id": "6",
+      "title": "Murmurs of the Street",
+      "author": "Alina",
+      "text": "Every street corner holds a story waiting to be told.",
+      "category": "Urban Echoes",
+      "photoUrl": ""
+    },
+    {
+      "id": "7",
+      "title": "Letters to the Moon",
+      "author": "Sofiya",
+      "text": "Writing to the only one who always listens.",
+      "category": "Midnight Confessions",
+      "photoUrl": ""
+    },
+    {
+      "id": "8",
+      "title": "Sidewalk Poetry",
+      "author": "Danylo",
+      "text": "Chalk scribbles that vanish by morning but linger in memory.",
+      "category": "City Life",
+      "photoUrl": ""
+    },
+    {
+      "id": "9",
+      "title": "Lost and Found",
+      "author": "Kateryna",
+      "text": "A missing glove, a dropped earring — who do they belong to?",
+      "category": "Urban Echoes",
+      "photoUrl": ""
+    },
+    {
+      "id": "10",
+      "title": "When Silence Falls",
+      "author": "Maksym",
+      "text": "When the city sleeps, the real stories begin.",
+      "category": "Midnight Confessions",
+      "photoUrl": ""
     }
   ]
 }
