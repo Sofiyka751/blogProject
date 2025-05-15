@@ -194,6 +194,34 @@ hr {
   background: #b4173a;
 }
 
+.newPost__content-form-category_select {
+  padding: 0.75rem;
+  border-radius: 10px;
+  border: 1px solid #ccbcfc;
+  background: #ffffff;
+  color: #2a003f;
+  width: 100%;
+  padding: 0.75rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%237c3aed'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1rem;
+  cursor: pointer;
+}
+.newPost__content-form-category_select::-moz-placeholder {
+  color: #999;
+}
+.newPost__content-form-category_select::placeholder {
+  color: #999;
+}
+.newPost__content-form-category_select:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 5px #a78bfa;
+}
+
 .searchPost__content {
   background: #fbfaff;
   padding: 1.5rem !important;
